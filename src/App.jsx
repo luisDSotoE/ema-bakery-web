@@ -113,47 +113,47 @@ const StyledCard = styled(Card)({
   flexDirection: 'column',
 });
 
-// --- LISTADO DE PRODUCTOS ---
+// --- LISTADO DE PRODUCTOS EN TU ORDEN EXACTO ---
 const PRODUCTOS_GALLETAS = [
   {
     id: 1,
-    nombre: 'Red Velvet Core',
+    nombre: 'Red velvet',
     descripcion: 'Espectacular masa roja aterciopelada de cacao con un corazón fundente de chocolate blanco premium y queso crema suave.',
     imagen: '/red-velvet-white.jpeg',
     badge: '¡Relleno Premium! 🔥'
   },
   {
     id: 2,
-    nombre: 'Red Velvet Dark',
-    descripcion: 'Nuestra icónica masa Red Velvet combinada con la intensidad y elegancia del chocolate negro premium.',
+    nombre: 'Red velvet chocolate negro',
+    descripcion: 'Nuestra icónica masa Red Velvet combinada con la elegante intensidad del chocolate negro premium.',
     imagen: '/red-velvet-dark.jpeg',
     badge: 'Nueva'
   },
   {
     id: 3,
-    nombre: 'Oreo Supreme',
+    nombre: 'Oreo',
     descripcion: 'Masa artesanal dorada con trozos de chocolate, rellena de una galleta Oreo entera y un centro irresistiblemente suave de crema.',
     imagen: '/oreo-white.jpeg',
     badge: 'La Favorita ⭐'
   },
   {
     id: 4,
-    nombre: 'Almendra & Choc Chunks',
+    nombre: 'Frutos secos',
     descripcion: 'Para los amantes de las texturas: Una combinación equilibrada de almendras tostadas crujientes y trozos masivos de chocolate oscuro fundido.',
     imagen: '/frutos-secos.jpeg',
     badge: 'Crocante'
   },
   {
     id: 5,
-    nombre: 'Festival Klim',
-    descripcion: 'Galleta de vainilla y leche Klim, con chispas de colores, chocolate blanco y relleno especial de leche Klim.',
-    imagen: '/festival-klim.jpeg',
-    badge: 'Divertida'
+    nombre: 'Café',
+    descripcion: 'Intensa y sofisticada masa artesanal impregnada con la esencia del mejor café seleccionado, balanceada con sedosas chispas de chocolate.',
+    imagen: '/cafe-artesanal.jpeg', // <--- CAMBIA ESTO POR EL NOMBRE REAL
+    badge: 'Exclusiva ☕'
   },
   {
     id: 6,
-    nombre: 'Cookies de Nutella',
-    descripcion: 'Galleta de vainilla con chispas de chocolate y un corazón abundante de Nutella que se derrite en tu boca.',
+    nombre: 'Nutella',
+    descripcion: 'Galleta de vainilla con chispas de chocolate y un corazón abundante de Nutella original que se derrite en tu boca.',
     imagen: '/nutella.jpeg',
     badge: 'Top Ventas'
   }
@@ -162,9 +162,20 @@ const PRODUCTOS_GALLETAS = [
 export default function App() {
   
   useEffect(() => {
+    // 1. Cargar fuentes tipográficas
     const link = document.createElement('link');
     link.href = 'https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Cinzel:wght@600;700&family=Great+Vibes&display=swap';
     document.head.appendChild(link);
+
+    // 2. Colocar la corona del logo como icono de la pestaña (Favicon)
+    const linkIcon = document.querySelector("link[rel~='icon']") || document.createElement('link');
+    linkIcon.type = 'image/svg+xml';
+    linkIcon.rel = 'icon';
+    linkIcon.href = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23142216'%3E%3Cpath d='M5 16L3 5L8.5 10L12 4L15.5 10L21 5L19 16H5M19 19C19 19.6 18.6 20 18 20H6C5.4 20 5 19.6 5 19V18H19V19Z'/%3E%3C/svg%3E";
+    document.head.appendChild(linkIcon);
+
+    // 3. Cambiar título de la página
+    document.title = "EMA Bakery | Galletas Gourmet";
   }, []);
 
   const conectarWhatsApp = (mensajeOpcional) => {
@@ -305,7 +316,7 @@ export default function App() {
         </Container>
       </Box>
 
-      {/* FOOTER CON CONTACTO RESTAURADO */}
+      {/* FOOTER CON CONTACTO */}
       <Box sx={{ bgcolor: '#142216', color: '#D9E6D0', pt: { xs: 6, md: 8 }, pb: 4, borderTop: '1px solid rgba(217,230,208,0.15)' }}>
         <Container maxWidth="xl">
           <Grid container spacing={4} justifyContent="space-between" alignItems="center" sx={{ mb: 4, flexDirection: { xs: 'column', sm: 'row' }, textAlign: { xs: 'center', sm: 'left' } }}>
