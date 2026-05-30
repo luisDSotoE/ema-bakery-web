@@ -118,42 +118,42 @@ const PRODUCTOS_GALLETAS = [
   {
     id: 1,
     nombre: 'Red velvet',
-    descripcion: 'Espectacular masa roja aterciopelada de cacao con un corazón fundente de chocolate blanco premium y queso crema suave.',
+    descripcion: 'Base de red velvet, chispas de chocolate blanco relleno a base de leche condensada y chocolate blanco.',
     imagen: '/red-velvet-white.jpeg',
     badge: '¡Relleno Premium! 🔥'
   },
   {
     id: 2,
     nombre: 'Red velvet chocolate negro',
-    descripcion: 'Nuestra icónica masa Red Velvet combinada con la elegante intensidad del chocolate negro premium.',
+    descripcion: 'Base de red velvet, chispas de chocolate semiamargo, relleno de Nutella.',
     imagen: '/red-velvet-dark.jpeg',
     badge: 'Nueva'
   },
   {
     id: 3,
     nombre: 'Oreo',
-    descripcion: 'Masa artesanal dorada con trozos de chocolate, rellena de una galleta Oreo entera y un centro irresistiblemente suave de crema.',
+    descripcion: 'Galleta de vainilla con trozos de galleta oreo, chispas de chocolate blanco, relleno a base de chocolate blanco.',
     imagen: '/oreo-white.jpeg',
     badge: 'La Favorita ⭐'
   },
   {
     id: 4,
     nombre: 'Frutos secos',
-    descripcion: 'Para los amantes de las texturas: Una combinación equilibrada de almendras tostadas crujientes y trozos masivos de chocolate oscuro fundido.',
+    descripcion: 'Frutos secos galleta de vainilla con mix de frutos secos y chocolate.',
     imagen: '/frutos-secos.jpeg',
     badge: 'Crocante'
   },
   {
     id: 5,
     nombre: 'Café',
-    descripcion: 'Intensa y sofisticada masa artesanal impregnada con la esencia del mejor café seleccionado, balanceada con sedosas chispas de chocolate.',
+    descripcion: 'Base de vainilla con cacao y café, almendras, chispas de chocolate semi amargo y relleno artesanal de café.',
     imagen: '/cafe-artesanal.jpeg', 
     badge: 'Exclusiva ☕'
   },
   {
     id: 6,
     nombre: 'Nutella',
-    descripcion: 'Galleta de vainilla con chispas de chocolate y un corazón abundante de Nutella original que se derrite en tu boca.',
+    descripcion: 'Galleta de vainilla con chispas de chocolate semi amargo y relleno de nutella.',
     imagen: '/nutella.jpeg',
     badge: 'Top Ventas'
   },
