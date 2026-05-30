@@ -113,49 +113,56 @@ const StyledCard = styled(Card)({
   flexDirection: 'column',
 });
 
-// --- LISTADO DE PRODUCTOS EN TU ORDEN EXACTO ---
+// --- LISTADO DE PRODUCTOS ---
 const PRODUCTOS_GALLETAS = [
   {
     id: 1,
     nombre: 'Red velvet',
-    descripcion: 'Base de red velvet, chispas de chocolate blanco relleno a base de leche condensada y chocolate blanco.',
+    descripcion: 'Espectacular masa roja aterciopelada de cacao con un corazón fundente de chocolate blanco premium y queso crema suave.',
     imagen: '/red-velvet-white.jpeg',
     badge: '¡Relleno Premium! 🔥'
   },
   {
     id: 2,
     nombre: 'Red velvet chocolate negro',
-    descripcion: 'Base de red velvet, chispas de chocolate semiamargo, relleno de Nutella.',
+    descripcion: 'Nuestra icónica masa Red Velvet combinada con la elegante intensidad del chocolate negro premium.',
     imagen: '/red-velvet-dark.jpeg',
     badge: 'Nueva'
   },
   {
     id: 3,
     nombre: 'Oreo',
-    descripcion: 'Galleta de vainilla con trozos de galleta oreo, chispas de chocolate blanco, relleno a base de chocolate blanco.',
+    descripcion: 'Masa artesanal dorada con trozos de chocolate, rellena de una galleta Oreo entera y un centro irresistiblemente suave de crema.',
     imagen: '/oreo-white.jpeg',
     badge: 'La Favorita ⭐'
   },
   {
     id: 4,
     nombre: 'Frutos secos',
-    descripcion: 'Frutos secos galleta de vainilla con mix de frutos secos y chocolate.',
+    descripcion: 'Para los amantes de las texturas: Una combinación equilibrada de almendras tostadas crujientes y trozos masivos de chocolate oscuro fundido.',
     imagen: '/frutos-secos.jpeg',
     badge: 'Crocante'
   },
   {
     id: 5,
     nombre: 'Café',
-    descripcion: 'Base de vainilla con cacao y café, almendras, chispas de chocolate semi amargo y relleno artesanal de café.',
-    imagen: '/cafe-artesanal.jpeg', 
+    descripcion: 'Intensa y sofisticada masa artesanal impregnada con la esencia del mejor café seleccionado, balanceada con sedosas chispas de chocolate.',
+    imagen: '/cafe.jpeg', 
     badge: 'Exclusiva ☕'
   },
   {
     id: 6,
     nombre: 'Nutella',
-    descripcion: 'Galleta de vainilla con chispas de chocolate semi amargo y relleno de nutella.',
+    descripcion: 'Galleta de vainilla con chispas de chocolate y un corazón abundante de Nutella original que se derrite en tu boca.',
     imagen: '/nutella.jpeg',
     badge: 'Top Ventas'
+  },
+  {
+    id: 7,
+    nombre: 'Bocadito mix',
+    descripcion: 'Galletas minis surtidas y se acompañan con dip de chocolate o arequipe.',
+    imagen: '/bocadito-mix.jpeg',
+    badge: '¡Para Compartir! ✨'
   }
 ];
 
@@ -303,7 +310,7 @@ export default function App() {
                       variant="contained" 
                       color="secondary"
                       fullWidth
-                      onClick={() => conectarWhatsApp(`Holis!!! 👑\n¿Tienen disponibilidad de la galleta ${producto.nombre}?`)}
+                      onClick={() => conectarWhatsApp(`Holis!!! 👑\n¿Tienen disponibilidad de: ${producto.nombre}?`)}
                       sx={{ borderRadius: '10px', fontWeight: 'bold', textTransform: 'none', py: 1.5 }}
                     >
                       Pedir por WhatsApp
