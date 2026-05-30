@@ -147,7 +147,7 @@ const PRODUCTOS_GALLETAS = [
     id: 5,
     nombre: 'Café',
     descripcion: 'Intensa y sofisticada masa artesanal impregnada con la esencia del mejor café seleccionado, balanceada con sedosas chispas de chocolate.',
-    imagen: '/cafe.jpeg', 
+    imagen: '/cafe-artesanal.jpeg', 
     badge: 'Exclusiva ☕'
   },
   {
